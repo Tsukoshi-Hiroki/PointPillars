@@ -74,7 +74,7 @@ def vis_pc(pc, bboxes=None, labels=None):
         pc = npy2ply(pc)
     
     mesh_frame = o3d.geometry.TriangleMesh.create_coordinate_frame(
-    size=10, origin=[0, 0, 0])
+    size=1, origin=[0, 0, 0])
 
     if bboxes is None:
         vis_core([pc, mesh_frame])
